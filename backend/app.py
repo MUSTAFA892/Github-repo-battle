@@ -7,7 +7,7 @@ import os
 app = Flask(__name__)
 
 # Enable CORS (adjust the origins if needed)
-CORS(app, origins=["http://localhost:3000"])  # This allows only localhost:3000 for requests
+CORS(app, origins=["https://github-repo-battle-omega.vercel.app/"])  # This allows only localhost:3000 for requests
 
 # Ensure the API key is set in the environment or directly in the code securely
 api_key = os.getenv("GEMINI_API_KEY", "AIzaSyDHKfIPCO7tTe4R75zRPA3pRRGRyksJzVg")  # Best practice to load from environment variables

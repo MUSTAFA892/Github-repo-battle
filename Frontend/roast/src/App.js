@@ -42,7 +42,7 @@ const App = () => {
     // If both profiles are valid, send them to the backend
     if (fetchedProfile1 && fetchedProfile2) {
       try {
-        const res = await axios.post('http://localhost:5000/generate', {
+        const res = await axios.post('https://github-repo-battle-backend.onrender.com/generate', {
           userName1: user1,
           userData1: fetchedProfile1,
           userName2: user2,
